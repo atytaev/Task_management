@@ -1,0 +1,162 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #004d40;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #00796b;
+}
+
+.delete-message {
+  background-color: #ffccbc;
+  color: #d32f2f;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form select {
+  width: 98%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+form button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Отступ между кнопкой и ошибками */
+}
+
+.error-messages {
+  margin-top: 20px; /* Увеличим отступ сверху, чтобы ошибки были ниже кнопки */
+  color: red;
+  font-size: 0.9rem;
+}
+
+.error-message {
+  margin-bottom: 5px;
+}
+
+li button {
+  margin-right: 10px; /* Добавляем отступ справа */
+}
+
+li button:last-child {
+  margin-right: 0; /* Для последней кнопки убираем отступ */
+}
+
+.task-critical {
+    background-color: #ffcccc;
+    border-left: 5px solid red;
+}
+
+.task-warning {
+    background-color: #fff3cd;
+    border-left: 5px solid orange;
+}
+
+.critical-notice {
+    color: red;
+    font-weight: bold;
+}
+
+.warning-notice {
+    color: orange;
+    font-weight: bold;
+}
+
+.success-message {
+  background-color: #28a745; /* Зеленый фон для успешного сообщения */
+  color: white; /* Белый текст */
+  padding: 15px; /* Внутренний отступ */
+  border-radius: 5px; /* Скругленные углы */
+  text-align: center; /* Выравнивание текста по центру */
+  font-weight: bold; /* Жирный текст */
+  margin-top: 20px; /* Отступ сверху */
+  animation: fadeIn 2s ease-in-out; /* Анимация плавного появления */
+}
+
+
