@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.views.generic import RedirectView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -9,4 +11,5 @@ urlpatterns = [
     path('api/', include('tasks.urls')),  # Подключаем маршруты для задач
     path('api-auth/', include('rest_framework.urls')),
     path('users/', include('users.urls')),  # Маршруты пользователей
+    path('', RedirectView.as_view(url='/api/')),
 ]
