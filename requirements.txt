@@ -6,3 +6,4 @@ psycopg2-binary>=2.9,<3.0
 whitenoise>=5.2,<6.0
 python-dateutil
 python-dotenv>=0.21,<0.22
+pip install gunicorn
